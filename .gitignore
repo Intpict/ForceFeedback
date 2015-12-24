@@ -18,6 +18,9 @@ $RECYCLE.BIN/
 *.lnk
 
 # Visual Studio Sys Files
+*.suo
+*.ipch
+*.log
 *.aps
 *.sdf
 *.ncb
