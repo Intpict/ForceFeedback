@@ -35,7 +35,7 @@ int main(){
 	}
 
 	int mode = 0;
-	cout<<"Please input control mode[0-2]"<<endl;
+	cout<<"Please input control mode[0-5]"<<endl;
 	cout<<"0: exit"<<endl;
 	cout<<"1: set finger force"<<endl;
 	cout<<"2: set finger Torque"<<endl;
