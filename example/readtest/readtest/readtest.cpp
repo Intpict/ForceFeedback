@@ -39,11 +39,16 @@ int main(){
 		return 1;
 	};
 
+	//开启更新线程
+	m_ins.StartCycUpdate();
+
 	while (!kbhit()){
 		PosInfo pos = m_ins.Read();
-		RawData ang = m_ins.ReadRaw();
 		cout<<pos.p_x<<' '<<pos.p_y<<' '<<pos.p_z<<' '<<pos.r_x<<' '<<pos.r_y<<' '<<pos.r_z<<'\r';
 	}
 	cout<<endl;
+
+	//关闭更新线程
+	m_ins.StopCycUpdate();
 	return 0;
 }
